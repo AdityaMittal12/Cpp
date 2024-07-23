@@ -1,0 +1,17 @@
+// WAP to find highest factor of a given no. other than the no. itself
+
+#include<iostream>
+using namespace std;
+int main(){
+    int n;
+    cout<<"Enter n : ";
+    cin>>n;
+    int f;  //store facors in this variable and print last stored factor i.e highest
+    for (int i=1; i<=n/2; i++){
+        if (n%i==0){
+            f=i;
+            
+        }
+    }
+    cout << f;
+}
