@@ -1,0 +1,17 @@
+////Ques : Display the given geometric progression series upto 'n' terms
+//Given GP series: 1,2,4,8,16,..........
+
+// HINT : only run the loop upto total terms in GP and inside it start increament the GP
+
+#include<iostream>
+using namespace std;
+int main(){
+int n;
+cout<<"Enter n : ";
+cin>>n;
+int a = 1;
+for (int i=1 ; i<=n ; i++){
+      cout<<a<<" ";
+      a=a*2;
+}
+}
