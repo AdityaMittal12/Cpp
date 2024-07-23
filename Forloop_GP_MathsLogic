@@ -1,5 +1,5 @@
 ////Ques : Display the given geometric progression series upto 'n' terms
-//Given AP series: 1,2,4,8,16,..........
+//Given GP series: 1,2,4,8,16,..........
 
 // HINT : last( Nth term )of GP : ar^(n-1)  ; a is 1st term ; r is ratiob/w two terms; n is total no. of terms.
 
