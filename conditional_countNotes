@@ -1,0 +1,64 @@
+//WAP to display the number of each denomination of the total amount entered by the user
+
+#include <iostream>
+using namespace std;
+int main(){
+    int amount,deno;
+    cout<<"Enter total amount: ";
+    cin>>amount;
+    if (amount >=500){
+        deno=500;
+    }
+    else if (amount>=200){
+        deno=200;
+    }
+    else if (amount>=100){
+        deno=100;
+    }
+    else if (amount>=50){
+        deno=50;
+    }
+    else if(amount>=20){
+        deno=20;
+    }
+    else if (amount>=10){
+        deno=10;
+    }
+    else if(amount>=5){
+        deno=5;
+    }
+    else if(amount>=1){
+        deno=1;
+    }
+    else deno=0;
+    int notes500,notes200,notes100,notes50,notes20,notes10,notes5,notes1 = 0;
+    switch(deno){
+        case 500: notes500=amount/500;
+                  amount=amount%500;
+        case 200: notes200=amount/200;
+                  amount=amount%200;
+        case 100: notes100=amount/100;
+                  amount=amount%100;
+        case 50: notes50=amount/50;
+                  amount=amount%50;
+        case 20: notes20=amount/20;
+                  amount=amount%20;
+        case 10: notes10=amount/10;
+                  amount=amount%10;
+        case 5: notes5=amount/5;
+                  amount=amount%5;
+        case 1: notes1=amount/1;
+                  amount=amount%1;
+                  break;
+        default: cout<<"Invalid amount";
+    }
+    cout<<"Total 500 notes : "<<notes500<<endl;
+    cout<<"Total 200 notes : "<<notes200<<endl;
+    cout<<"Total 100 notes : "<<notes100<<endl;
+    cout<<"Total 50 notes : "<<notes50<<endl;
+    cout<<"Total 20 notes : "<<notes20<<endl;
+    cout<<"Total 10 notes : "<<notes10<<endl;
+    cout<<"Total 5 notes : "<<notes5<<endl;
+    cout<<"Total 1 notes : "<<notes1<<endl;
+}
+
