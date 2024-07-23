@@ -1,0 +1,16 @@
+////Ques : Display the given geometric progression series upto 'n' terms
+//Given AP series: 1,2,4,8,16,..........
+
+// HINT : last( Nth term )of GP : ar^(n-1)  ; a is 1st term ; r is ratiob/w two terms; n is total no. of terms.
+
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main(){
+    int n;
+    cout<<"Enter n : ";
+    cin >> n;
+    for (int i=1;i<=pow(2,n-1);i=i*2){
+        cout<<i<<" ";
+    }
+}
