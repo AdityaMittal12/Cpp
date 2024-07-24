@@ -14,3 +14,22 @@ int main() {
     }
     cout<<sum;
 }
+
+
+
+//WAP to display the total sum of even numbers from 1 to 'n' using while loop.
+
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    cout<<"Enter n: ";
+    cin>>n;
+    int sum=0;
+    int i=2;
+    while(i<=n){
+        sum=sum+i;
+        i+=2;
+    }
+    cout<<sum;
+}
