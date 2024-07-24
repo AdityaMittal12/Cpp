@@ -1,0 +1,25 @@
+//WAP to check if given number is prime or composite
+// This code is more accurate than 'ForLoop_PrimeOrComposite' as it also considerate that negative no.s are neither prime nor composite
+
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    cout<<"Enter n : ";
+    cin>>n;
+    
+    bool x = true;
+    int i=2;
+    
+    if (n<=1)cout<<"Neither prime nor composite\n";
+    
+    else { 
+            while(i<=n/2){
+            if (n%i==0 ) x=false;
+            i++;
+            break;
+                         }
+        if (x==true) cout<<"Prime no.";
+        else cout<<"Composite no.";
+      }
+}
