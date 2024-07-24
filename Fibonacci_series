@@ -1,0 +1,17 @@
+// WAP to display the following fionacci series upto given 'n' terms
+// FS : 0,1,1,2,3,5,8,..........
+
+#include <iostream>
+using namespace std;
+int main() {
+    int n,a=0,b=1;
+    cout<<"Enter n : ";
+    cin>>n;
+    cout<<a<<" "<<b<<" ";
+    for(int i = 3; i<=n; i++){
+            int sum =a+b;
+            cout<<sum<<" ";
+            a=b;
+            b=sum;
+    }
+}
