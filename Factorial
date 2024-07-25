@@ -1,0 +1,34 @@
+//WAP to find facorial of n
+
+#include<iostream>
+using namespace std;
+int main(){
+    int n;
+    cout<<"Enter n : ";
+    cin>>n;
+    int product = 1;
+    int i=1;
+    while(i<=n){
+        product = i * product;
+        i++;
+    }
+    cout<<"factorial of "<<n<<" is "<<product;
+}
+
+
+
+
+                                                                                                              OR
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    cout<<"Enter n : ";
+    cin>>n;
+    int product=1;
+    for (int i=1;i<=n;i++){
+        product = product*i;
+    }
+cout<<"factorial of "<<n<<" is "<<product;
+    return 0;
+}
