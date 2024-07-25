@@ -1,2 +1,2 @@
 # Cpp
-posting some hand picked c++ solution for practical understanding of core conpects and helping the community.
+posting some hand picked c++ solution for practical understanding of basic core conpects and helping the community.
