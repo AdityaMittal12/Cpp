@@ -13,3 +13,23 @@ int main() {
     }
     cout<<sum;
 }
+
+
+
+
+//WAP to print sum of even digits of the given number
+
+#include<iostream>
+using namespace std;
+int main(){
+    int n;
+    cout<<"Enter n : ";
+    cin>>n;
+    int sum =0;
+    while(n!=0){
+        int Lt = n%10;  //last term
+        if (Lt%2==0) sum =sum + Lt;
+        n=n/10;
+    }
+    cout<<sum;
+}
