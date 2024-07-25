@@ -1,0 +1,14 @@
+//WAP to print the reverse of the given number 'n'
+
+#include<iostream>
+using namespace std;
+int main(){
+    int n;
+    cout<<"Enter n : ";
+    cin>>n;
+    while(n!=0){
+        int Lt = n%10;
+        cout<<Lt;
+        n=n/10;
+    }
+}
