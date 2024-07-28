@@ -36,3 +36,26 @@ int main() {
         x = x-y;
         cout<<x<<" "<<y<<endl;
 }
+
+
+
+
+//Method3 : //Swap two numbers using functions  (use of reference variables);
+
+#include<iostream>
+using namespace std;
+void swap(int &x,int &y){
+    x=x+y;
+    y=x-y;
+    x=x-y;
+}
+int main(){
+    int x,y;
+    cout<<"Enter x : ";
+    cin>>x;
+    cout<<"Enter y : ";
+    cin>>y;
+    cout<<x<<" "<<y<<endl;
+    swap(x,y);
+    cout<<x<<" "<<y;
+}
