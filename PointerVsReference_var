@@ -1,0 +1,5 @@
+// Reference variable shares same memory address of the original variable
+//pointers have their own different memory address
+
+// Reference variable is another name for an already existing variable.
+//pointers are storing the address of the original variable.
