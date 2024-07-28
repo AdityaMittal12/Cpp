@@ -40,7 +40,7 @@ int main() {
 
 
 
-//Method3 : //Swap two numbers using functions  (use of reference variables);
+//Method3 : Swap two numbers using function  (use of reference variables);
 
 #include<iostream>
 using namespace std;
@@ -58,4 +58,29 @@ int main(){
     cout<<x<<" "<<y<<endl;
     swap(x,y);
     cout<<x<<" "<<y;
+}
+
+
+
+
+//Methos4 :  Swap two numbers using function  (use of pointers);      //Where there is address involved in pass of arguments, it is called pass by reference.
+
+#include<iostream>
+using namespace std;
+
+void swap(int* a, int* b){
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+int main(){
+    int x,y;
+    cout<<"Enter x: ";
+    cin>>x;
+    cout<<"Enter y: ";
+    cin>>y;
+    cout<<x<<" "<<y<<endl;
+    swap(&x,&y);
+    cout<<x<<" "<<y<<endl;
 }
