@@ -1,0 +1,23 @@
+// WAP to display the combination
+
+#include <iostream>
+using namespace std;
+int fact(int x){
+    int product = 1;
+    for(int i=1; i<=x; i++){
+        product = product *i;
+    }
+    return product;
+}
+int main() {
+    int n,r;
+    cout<<"Enter n : ";
+    cin>>n;
+    cout<<"Enter r : ";
+    cin>>r;
+    int a = fact(n);
+    int b = fact(r);
+    int c = fact(n-r);
+    
+    cout<<"combination of "<<n<<"C"<<r<<" is : "<<a/(b*c); 
+}
