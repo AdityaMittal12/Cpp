@@ -1,0 +1,39 @@
+//WAP to copy the contents of one array into another in the revenrse order.
+
+#include <iostream>
+using namespace std;
+int main() {
+    int a[] = {1,2,3,4,98,5};
+    int n = sizeof(a)/4;
+    int b[n];
+    for(int i=0; i<n; i++){
+        int j = n-1-i;   //relation b/w arrays : n-1 = i+j   
+        //j are elements in a[] and i are  elements in b[]
+        b[i] = a[j];
+        cout<<b[i]<<" ";
+    }
+    
+}
+
+
+WAP to reverse the array without using an extra array
+
+#include <iostream>
+using namespace std;
+int main() {
+    int a[] = {1,2,3,4,98,5};
+    int n = sizeof(a)/4;
+    
+    int i=0;
+    int j=n-1;
+    for(;i<j;i++){
+        int temp = a[i];
+        a[i] = a[j];
+        a[j] = temp;
+        j--;
+    }
+    
+    for(int i=0; i<n; i++){
+        cout<<a[i]<<" ";
+    }
+}
