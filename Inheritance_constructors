@@ -1,0 +1,38 @@
+//Dry run to show how parent class constructor is accessed through child class.
+
+
+#include <iostream>
+using namespace std;
+
+class A{
+        string name;
+        int age;
+        public:
+        A( string a, int b){
+            name = a;
+            age = b;
+        }
+        void getAinfo(){
+            cout<<name<<endl;
+            cout<<age<<endl;
+        }
+        
+    };
+    
+    class B : public A{
+        string blood_group;
+        public:
+        B (string x, string y, int z) : A(y,z) {          // arguments are passed to parent class through child class
+            blood_group = x;
+        }
+        void getBinfo(){
+            cout<<blood_group<<endl;
+            getAinfo();
+        }
+        
+    };
+
+int main() {
+    B obj("OP", "Aditya",21);
+    obj.getBinfo();
+}
